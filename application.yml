@@ -1,0 +1,26 @@
+server:
+  port: 8080
+
+spring:
+  datasource:
+    url: jdbc:h2:mem:chatbot_db
+    driverClassName: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+    hibernate:
+      ddl-auto: update
+  sql:
+    init:
+      mode: never  # This line prevents Spring from trying to execute the empty schema.sql
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+langchain4j:
+  ollama:
+    base-url: http://localhost:11434
+    model: mistral
