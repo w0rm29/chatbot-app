@@ -17,8 +17,8 @@ public class OllamaConfig {
     @Bean
     public OllamaChatModel ollamaChatModel() {
         return OllamaChatModel.builder()
-                .baseUrl(baseUrl)  // Use the injected baseUrl
-                .modelName(modelName) //use the injected modelName
+                .baseUrl(baseUrl)
+                .modelName(modelName)
                 .build();
     }
 }

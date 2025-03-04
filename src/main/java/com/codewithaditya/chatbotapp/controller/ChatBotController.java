@@ -17,7 +17,6 @@ public class ChatBotController {
     @PostMapping("/ask")
     public Map<String, String> askChatbot(@RequestBody Map<String, String> request) {
         String userMessage = request.get("message");
-        System.out.println("userMessage: " + userMessage);
         String response = chatService.getChatbotResponse(userMessage);
         return Map.of("response", response);
     }
