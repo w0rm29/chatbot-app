@@ -1,0 +1,12 @@
+Spring Boot is an open-source Java framework used to build stand-alone, production-ready applications.
+It simplifies Java development by reducing boilerplate code and providing out-of-the-box configurations.
+Spring Boot includes embedded servers (Tomcat, Jetty, or Undertow), making it easy to deploy applications
+without needing an external web server.
+
+Key features:
+- Auto-configuration to reduce manual setup.
+- Embedded servers for easy deployment.
+- Spring Boot Starters to simplify dependency management.
+- Production-ready monitoring with Spring Actuator.
+
+Spring Boot is widely used for building microservices, REST APIs, and enterprise applications.

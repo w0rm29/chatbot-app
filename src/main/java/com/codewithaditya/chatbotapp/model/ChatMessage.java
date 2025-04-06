@@ -12,13 +12,16 @@ import java.time.LocalDateTime;
 @AllArgsConstructor
 @Table(name = "chat_messages")
 public class ChatMessage {
-
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
+    @Column(unique = true, nullable = false)
     private String userMessage;
+
+    @Column(columnDefinition = "TEXT")  // Ensure large responses fit
     private String botResponse;
 
-    private LocalDateTime timestamp = LocalDateTime.now();
+    @Column(name = "timestamp")
+    private String timestamp;
 }

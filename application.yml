@@ -3,17 +3,16 @@ server:
 
 spring:
   datasource:
-    url: jdbc:h2:mem:chatbot_db
-    driverClassName: org.h2.Driver
-    username: sa
+    url: jdbc:postgresql://localhost:5432/chatbotdb
+    username: postgres
     password:
+    driver-class-name: org.postgresql.Driver
+
   jpa:
-    database-platform: org.hibernate.dialect.H2Dialect
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
     hibernate:
       ddl-auto: update
-  sql:
-    init:
-      mode: never  # This line prevents Spring from trying to execute the empty schema.sql
+    show-sql: true
 
   h2:
     console:
@@ -23,4 +22,12 @@ spring:
 langchain4j:
   ollama:
     base-url: http://localhost:11434
-    model: mistral
+    models:
+      - mistral
+      - gemma
+      - llama3.2
+
+ai:
+  docs:
+    location: "src/main/resources/docs"
+
