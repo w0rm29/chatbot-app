@@ -1,15 +1,18 @@
 # Chat API
 
-A **Spring Boot** application that provides a REST API for handling chat-based interactions.
+A **Spring Boot** application that provides a REST API for handling chat-based interactions, including **Retrieval-Augmented Generation (RAG)** capabilities.
 
 ## Features
 
 - RESTful API with Spring Boot
 - JSON-based communication
+- Retrieval-Augmented Generation (RAG) support
 - Easily extendable architecture
 - Supports **Spring Boot 3+**, **Java 17+**
 - Maven/Gradle build system
+
 ---
+
 ## Prerequisites
 
 Ensure you have the following installed:
@@ -17,7 +20,9 @@ Ensure you have the following installed:
 - **Java 21+** ([Download](https://adoptium.net/))
 - **Maven 3+** ([Download](https://maven.apache.org/download.cgi))
 - **Postman** (Optional, for API testing)
+
 ---
+
 ## 🛠️ Setup & Installation
 
 Clone the repository:
