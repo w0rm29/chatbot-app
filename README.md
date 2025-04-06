@@ -76,5 +76,6 @@ Made with ❤️ using:
 -  [Spring Boot](https://spring.io/projects/spring-boot) – Backend framework
 -  [LangChain](https://www.langchain.com/) – AI/LLM Orchestration
 -  [Ollama](https://ollama.com/) – Local LLM Inference
+- RAG (Retrieval-Augmented Generation) – Context-aware chat intelligence
 
 
